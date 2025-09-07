@@ -1,0 +1,46 @@
+.cube3d {
+    perspective: 500px;
+}
+
+.cube {
+    color: aliceblue;
+    font-size: 4em;
+    width: 128px;
+    margin: 128px auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-40deg) rotateY(35deg);
+}
+
+.side {
+    position: absolute;
+    width: 128px;
+    height: 128px;
+    background: rgba(219, 25, 25, 0.647);
+    border: 1px solid black;
+    text-align: center;
+    line-height: 128px;
+}
+
+.front {
+    transform: translateZ(64px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(64px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(64px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(64px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(64px);
+}
+
+.back {
+    transform: rotateY(-180deg) translateZ(64px);
+}

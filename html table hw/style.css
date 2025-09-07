@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border-collapse:separate ;
+}
+caption {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+table tbody tr td{
+    border-bottom: 2px solid #1d96b2;
+    text-align: center;
+}
+
+th, td {
+    padding: 12px;
+}
+
+thead th {
+    background-color: #1d96b2;
+    color: white;
+    font-weight: 100;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #efeeed;
+}

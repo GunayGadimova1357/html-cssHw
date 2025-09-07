@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(203, 125, 241);
+}
+.load{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 50px;
+    margin: -20px 0 0 -60px;
+    filter: contrast(20);
+}
+.stick1{
+    position: absolute;
+    width: 15px;
+    height: 100px;
+    background-color: aliceblue;
+    top: 15px;
+    left: 15px;
+    animation: stick1_anim 0.75s infinite;
+    filter: blur(1px);
+}
+.dot{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    top: 55px;
+    left: 15px;
+    filter: blur(2px);
+    border-radius: 50%;
+    animation: dot_anim 0.6s infinite;
+    margin-left: 70px;
+}
+.stick2{
+    position: absolute;
+    width: 15px;
+    height: 100px;
+    background-color: aliceblue;
+    top: 15px;
+    left: 15px;
+    animation: stick2_anim 0.75s  infinite;
+    margin-left: 145px;
+    filter: blur(1px);
+}
+@keyframes stick1_anim{
+    50%{
+        transform: translateY(-30px);
+    }
+}
+@keyframes stick2_anim{
+    50%{
+        transform: translateY(30px);
+    }
+}
+@keyframes dot_anim{
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+
